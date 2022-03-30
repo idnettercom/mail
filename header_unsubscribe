@@ -1,5 +1,2 @@
-nano /etc/postfix/main.cf
 header_checks = regexp:/etc/postfix/list_unsub_header
-
-nano /etc/postfix/list_unsub_header
 /^Content-Transfer-Encoding:/i PREPEND List-Unsubscribe: mailto:<sender-email-address>?subject=unsubscribe>"
